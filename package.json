@@ -1,0 +1,27 @@
+{
+  "name": "solana-training",
+  "version": "1.0.0",
+  "description": "A tutorial on how to build something like this: \"A decentralized marketplace for creating, buying, and selling NFTs on the Solana platform. \"",
+  "main": "index.js",
+  "scripts": {
+    "s": "npx esrun src/generate-keypair.ts",
+    "ss": "npx esrun src/check-balance.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "solana-training"
+  },
+  "keywords": [
+    "[\"solama\"",
+    "\"nft\"",
+    "\"marketplace\"",
+    "\"blockchain\"]"
+  ],
+  "author": "LaNN-Test",
+  "license": "MIT",
+  "dependencies": {
+    "@solana-developers/helpers": "^2.4.0",
+    "@solana/web3.js": "^1.95.2"
+  }
+}
