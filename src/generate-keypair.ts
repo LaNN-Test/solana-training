@@ -1,15 +1,6 @@
 import { Keypair } from "@solana/web3.js";
-import dotenv from "dotenv";
+const keypair = Keypair.generate();
 
-dotenv.config()
-
-let privateKey = process.env["SECRET_KEY"]
-if (privateKey === undefined) {
-  console.log(`Add SECRET_KEY to .env`)
-  process.exit(1)
-}
-
-const asArray = Uint8Array.from(JSON.parse(privateKey))
-const keypair = Keypair.fromSecretKey(asArray)
-
-console.log(`Public key: ${keypair.publicKey.toBase58()}`)
+console.log(`The public key is: `, keypair.publicKey.toBase58());
+console.log(`The secret key is: `, keypair.secretKey);
+console.log(`✅ Finished!`);
