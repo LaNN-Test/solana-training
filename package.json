@@ -4,9 +4,9 @@
   "description": "A tutorial on how to build something like this: \"A decentralized marketplace for creating, buying, and selling NFTs on the Solana platform. \"",
   "main": "index.js",
   "scripts": {
-    "s": "npx esrun src/generate-keypair.ts",
-    "ss": "npx esrun src/check-balance.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "g.k": "npx esrun src/generate-keypair.ts",
+    "ch.b": "npx esrun src/check-balance.ts",
+    "cr.t.m": "npx esrun src/create-token-mint.ts"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@solana-developers/helpers": "^2.4.0",
+    "@solana/spl-token": "^0.4.8",
     "@solana/web3.js": "^1.95.2"
   }
 }
