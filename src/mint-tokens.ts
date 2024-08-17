@@ -18,12 +18,14 @@ const connection = new Connection(clusterApiUrl("devnet"));
 // Our token has two decimal places
 const MINOR_UNITS_PER_MAJOR_UNITS = Math.pow(10, 2);
 
+// Token mint account (Mint из Explorer) (идентификатор токена)
 const tokenMintAccount = new PublicKey(
-  "Address that create-token-mint.ts created for you"
+  "J1kPQXYG5LenR31aCQP5oWXpfFebeQ9kefUCoe3kxaRn"
 );
 
+// Token account (create-token-account.ts) (идентификатор балланса конкретного пользователя)
 const recipientAssociatedTokenAccount = new PublicKey(
-  "Address that create-token-account.ts created"
+  "5NgQptafPWUWi7XcK4Uvi3U9f3Dnrm5CufX92CQmTgFu"
 );
 
 const transactionSignature = await mintTo(
