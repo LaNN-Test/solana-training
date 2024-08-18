@@ -18,7 +18,7 @@ const connection = new Connection(clusterApiUrl("devnet"));
 // Our token has two decimal places
 const MINOR_UNITS_PER_MAJOR_UNITS = Math.pow(10, 2);
 
-// Token mint account (Mint из Explorer) (идентификатор токена)
+// Token mint account (Mint from Explorer) (идентификатор токена)
 const tokenMintAccount = new PublicKey(
   "J1kPQXYG5LenR31aCQP5oWXpfFebeQ9kefUCoe3kxaRn"
 );

@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "generate-k": "npx esrun src/generate-keypair.ts",
-    "load-k": "npx esrun src/generate-keypair.ts",
+    "load-k": "npx esrun src/load-keypair.ts",
     "check-b": "npx esrun src/check-balance.ts",
-    "create-t-m": "npx esrun src/create-token-mint.ts",
-    "create-t-a": "npx esrun src/create-token-account.ts",
-    "mint-t": "npx esrun src/mint-tokens.ts"
+    "create-t-mint": "npx esrun src/create-token-mint.ts",
+    "create-t-account": "npx esrun src/create-token-account.ts",
+    "mint-token": "npx esrun src/mint-tokens.ts",
+    "create-t-metadata": "npx esrun src/create-token-metadata.ts"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,10 @@
   "author": "LaNN-Test",
   "license": "MIT",
   "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^2.13.0",
     "@solana-developers/helpers": "^2.4.0",
     "@solana/spl-token": "^0.4.8",
-    "@solana/web3.js": "^1.95.2"
+    "@solana/web3.js": "^1.95.2",
+    "esbuild": "^0.23.1"
   }
 }
